@@ -34,12 +34,11 @@ export default function Begin() {
       </div>
       <div className="flex flex-col gap-0.5">
         <h2
-          style={{ wordSpacing: "-3px" }}
           className="text-black text-base sm:text-lg font-bold"
         >
           {step.heading}
         </h2>
-        <p style={{ wordSpacing: "-1px" }} className="text-black text-[10px]">
+        <p className="text-black text-[10px]">
           {step.text}
         </p>
       </div>
