@@ -43,7 +43,7 @@ export default function Explore() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeIn" }}
       viewport={{ amount: 0.3, once: true }}
-      className="w-full lg:w-265 h-auto lg:h-350 border-white shadow-sm block m-auto overflow-hidden bg-white"
+      className="w-full lg:w-265 h-auto lg:h-350 border-white shadow-sm block m-auto bg-white"
     >
       <motion.h1
         initial={{ opacity: 0, y: 60 }}
