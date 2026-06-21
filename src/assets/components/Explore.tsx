@@ -39,10 +39,9 @@ export default function Explore() {
 
   return (
     <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      initial={{ opacity: 0, y: 60 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeIn" }}
-      viewport={{ amount: 0.3, once: true }}
       className="w-full lg:w-265 h-auto lg:h-350 border-white shadow-sm block m-auto bg-white"
     >
       <motion.h1
@@ -63,7 +62,7 @@ export default function Explore() {
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: index * 0.15 }}
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             className={`shrink-0 h-9 px-4 rounded-l-3xl rounded-r-3xl flex items-center justify-center whitespace-nowrap ${course.color}`}
           >
             <p className="text-center">{course.text}</p>

@@ -116,7 +116,7 @@ export default function ExploreCourses() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ amount: 0.1, once: true }}
+              viewport={{ amount: 0, once: true }}
               className="rounded-lg bg-white shadow-sm pb-3 border border-gray-100 w-full max-w-sm mx-auto"
             >
               <CardContent course={course} />
@@ -134,7 +134,7 @@ export default function ExploreCourses() {
               initial={{ opacity: 0, scale: 0.85 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.55, delay: index * 0.15 }}
-              viewport={{ amount: 0.1, once: true }}
+              viewport={{ amount: 0, once: true }}
               className="rounded-lg bg-white shadow-sm pb-3 border border-gray-100"
             >
               <CardContent course={course} />
